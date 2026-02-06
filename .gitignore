@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Data and model artifacts
+data/raw/*
+data/labeled/*
+data/processed/*
+data/models/*
+!data/raw/.gitkeep
+!data/labeled/.gitkeep
+!data/processed/.gitkeep
+!data/models/.gitkeep
+

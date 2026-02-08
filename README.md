@@ -17,6 +17,7 @@ Core principles:
 - `docs/ROADMAP.md`: phased plan from first stream to silent coding demo.
 - `docs/ARCHITECTURE.md`: system design for multimodal decoding.
 - `docs/QUESTIONS.md`: open decisions to lock before implementation.
+- `docs/ALPHA_SPRINT_PLAN.md`: parallel execution plan using worktrees and teammate agents.
 - `src/bci`: signal acquisition, preprocessing, feature extraction, models, realtime loop.
 - `src/control`: action mapping and safety gates.
 - `src/ui`: live dashboard and operator tooling.
@@ -30,4 +31,3 @@ Core principles:
 2. Verify Ganglion stream quality and write Session 001 raw capture.
 3. Build baseline decoder that maps biosignal windows to low-level latent intents.
 4. Add text generation layer that converts intents to text with language-model assistance.
-

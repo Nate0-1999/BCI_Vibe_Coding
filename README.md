@@ -18,6 +18,7 @@ Core principles:
 - `docs/ARCHITECTURE.md`: system design for multimodal decoding.
 - `docs/QUESTIONS.md`: open decisions to lock before implementation.
 - `docs/ALPHA_SPRINT_PLAN.md`: parallel execution plan using worktrees and teammate agents.
+- `docs/INPUTS_NEEDED_FROM_YOU.md`: decisions and hardware details needed before first capture.
 - `src/bci`: signal acquisition, preprocessing, feature extraction, models, realtime loop.
 - `src/control`: action mapping and safety gates.
 - `src/ui`: live dashboard and operator tooling.

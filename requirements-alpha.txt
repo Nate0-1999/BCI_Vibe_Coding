@@ -1,0 +1,9 @@
+brainflow
+numpy
+scipy
+pandas
+scikit-learn
+mne
+pyqtgraph
+matplotlib
+rich

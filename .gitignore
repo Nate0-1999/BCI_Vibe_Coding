@@ -24,3 +24,5 @@ data/models/*
 !data/processed/.gitkeep
 !data/models/.gitkeep
 
+# Large installer artifacts
+third_party/openbci/*.dmg

@@ -27,12 +27,14 @@ Recommended stack:
 From repo root:
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
+./scripts/bootstrap_openbci.sh
 ```
 
-Install dependencies once we finalize `requirements.txt` / `pyproject.toml`.
+This script:
+- Creates `.venv`
+- Installs `requirements-alpha.txt`
+- Prints OpenBCI GUI installation steps for the downloaded DMG:
+  - `third_party/openbci/openbcigui_v6.0.0-beta.1_macosx.dmg`
 
 ## 4) Session 001 Device Check
 
@@ -47,9 +49,20 @@ Store as:
 - `data/raw/session_001_*`
 - metadata in `data/raw/session_001_meta.json`
 
+Quick stream test command:
+
+```bash
+.venv/bin/python scripts/quickcheck_ganglion.py --board ganglion_native --mac-address "<YOUR_GANGLION_MAC>" --seconds 10
+```
+
+If you are using dongle mode instead of native BLE:
+
+```bash
+.venv/bin/python scripts/quickcheck_ganglion.py --board ganglion --serial-port "/dev/cu.usbserial-XXXX" --seconds 10
+```
+
 ## 5) Hard Constraints to Track
 
 - Non-invasive EEG has low signal-to-noise and low text bitrate.
 - Reliable text generation requires personalization and repeated calibration.
 - Multimodal fusion improves robustness (EEG + EMG/ECG-like channels + context).
-
